@@ -1644,18 +1644,14 @@ PrefabInstance:
       propertyPath: fpsCamera
       value: 
       objectReference: {fileID: 459715850}
-    - target: {fileID: 3662516793812098886, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
-      propertyPath: ZoomInSensitivity
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3662516793812098886, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
-      propertyPath: ZoomOutSensitivity
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5393215578589016640, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
-      propertyPath: m_Material
+    - target: {fileID: 4726892970335927417, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+      propertyPath: FPCamera
       value: 
-      objectReference: {fileID: 13400000, guid: a5ac5f8641e234e4084644d41fb4874d, type: 2}
+      objectReference: {fileID: 1640917660}
+    - target: {fileID: 5738138184115831320, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+      propertyPath: FPCamera
+      value: 
+      objectReference: {fileID: 1640917660}
     - target: {fileID: 6911928899300251961, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
       propertyPath: GameOverCanves
       value: 
@@ -1707,16 +1703,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 558485147256840523, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1295522622}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
---- !u!198 &565446850 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 6560378836923887380, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
-  m_PrefabInstance: {fileID: 565446849}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &585127081
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4083,28 +4071,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5d7b87d422ee0f478ee09eb32e24f4e, type: 3}
---- !u!1 &1295522620 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 558485147256840523, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
-  m_PrefabInstance: {fileID: 565446849}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1295522622
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1295522620}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dec2d659052b2a14e9fbe96000dec480, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FPCamera: {fileID: 1640917660}
-  range: 100
-  damagePower: 30
-  muzzelflash: {fileID: 565446850}
-  hitEffect: {fileID: 3360542172024696037, guid: 902c19503f8df8d4b923b01198f70905, type: 3}
 --- !u!4 &1301799903 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3248315488105561783, guid: 687dbafc2b84b2846b9a4a7a7dae2a7e, type: 3}
