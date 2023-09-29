@@ -1640,6 +1640,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2362474156042608642, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3662516793812098886, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
       propertyPath: fpsCamera
       value: 
@@ -1652,10 +1656,18 @@ PrefabInstance:
       propertyPath: FPCamera
       value: 
       objectReference: {fileID: 1640917660}
+    - target: {fileID: 6004731480724133379, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+      propertyPath: FPCamera
+      value: 
+      objectReference: {fileID: 1640917660}
     - target: {fileID: 6911928899300251961, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
       propertyPath: GameOverCanves
       value: 
       objectReference: {fileID: 806205986}
+    - target: {fileID: 7541529041454678865, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+      propertyPath: FPCamera
+      value: 
+      objectReference: {fileID: 1640917660}
     - target: {fileID: 8616685848737228372, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
       propertyPath: m_Name
       value: PlayerCapsule
