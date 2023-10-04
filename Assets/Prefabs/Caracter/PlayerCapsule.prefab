@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6267659839414923712}
+  - component: {fileID: 2513753422491882462}
   m_Layer: 0
   m_Name: Weapons
   m_TagString: Untagged
@@ -34,6 +35,19 @@ Transform:
   - {fileID: 558485147256946027}
   m_Father: {fileID: 4135013735270702856}
   m_LocalEulerAnglesHint: {x: 0, y: -93.175, z: 0}
+--- !u!114 &2513753422491882462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 164794335938913036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40462a73d5055ab43a35a4c5a1209819, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentWeapon: 0
 --- !u!1 &4135013735270702863
 GameObject:
   m_ObjectHideFlags: 0
@@ -437,17 +451,17 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8616685848737228372}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7682c825604db1d4ba9b7af544d77b72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fpsCamera: {fileID: 0}
+  fpsController: {fileID: 0}
   zoomedOutFOV: 60
   zoomedInFOV: 20
   ZoomOutSensitivity: 1
   ZoomInSensitivity: 0.5
-  fpsController: {fileID: 0}
 --- !u!114 &9103289293214075795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -469,6 +483,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6267659839414923712}
     m_Modifications:
+    - target: {fileID: 1850540575548955687, guid: adc1cd91c3c24bb49a46e02de9192581, type: 3}
+      propertyPath: fpsController
+      value: 
+      objectReference: {fileID: 8616685848737228371}
     - target: {fileID: 2337074158996965286, guid: adc1cd91c3c24bb49a46e02de9192581, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.547
@@ -512,10 +530,6 @@ PrefabInstance:
     - target: {fileID: 2337074158997199750, guid: adc1cd91c3c24bb49a46e02de9192581, type: 3}
       propertyPath: m_Name
       value: ShotGun
-      objectReference: {fileID: 0}
-    - target: {fileID: 2337074158997199750, guid: adc1cd91c3c24bb49a46e02de9192581, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7498248867922770133, guid: adc1cd91c3c24bb49a46e02de9192581, type: 3}
       propertyPath: ammoSlot
@@ -585,8 +599,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2337074158997199750, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2351026419614141456, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
+      propertyPath: fpsController
+      value: 
+      objectReference: {fileID: 8616685848737228371}
     - target: {fileID: 7498248867922770133, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
       propertyPath: ammoSlot
       value: 
@@ -609,18 +627,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6267659839414923712}
     m_Modifications:
-    - target: {fileID: 2337074158996965286, guid: 0f273438233bcc74991c944d45fef7bb, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 2337074158996965286, guid: 0f273438233bcc74991c944d45fef7bb, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 2337074158996965286, guid: 0f273438233bcc74991c944d45fef7bb, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.7
-      objectReference: {fileID: 0}
+    - target: {fileID: 2198813354602963182, guid: 0f273438233bcc74991c944d45fef7bb, type: 3}
+      propertyPath: fpsController
+      value: 
+      objectReference: {fileID: 8616685848737228371}
     - target: {fileID: 2337074158996965286, guid: 0f273438233bcc74991c944d45fef7bb, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.036
@@ -664,6 +674,10 @@ PrefabInstance:
     - target: {fileID: 2337074158997199750, guid: 0f273438233bcc74991c944d45fef7bb, type: 3}
       propertyPath: m_Name
       value: Pistol
+      objectReference: {fileID: 0}
+    - target: {fileID: 2337074158997199750, guid: 0f273438233bcc74991c944d45fef7bb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7498248867922770133, guid: 0f273438233bcc74991c944d45fef7bb, type: 3}
       propertyPath: ammoSlot

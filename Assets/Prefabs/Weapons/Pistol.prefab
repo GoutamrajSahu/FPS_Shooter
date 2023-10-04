@@ -262,6 +262,7 @@ GameObject:
   - component: {fileID: 2337074159000356742}
   - component: {fileID: 2337074158999389510}
   - component: {fileID: 7498248867922770133}
+  - component: {fileID: 2198813354602963182}
   m_Layer: 0
   m_Name: Pistol
   m_TagString: Untagged
@@ -279,7 +280,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2337074158996965284}
@@ -358,6 +359,26 @@ MonoBehaviour:
   muzzelflash: {fileID: 3857935786348656731}
   hitEffect: {fileID: 3360542172024696037, guid: 902c19503f8df8d4b923b01198f70905, type: 3}
   ammoSlot: {fileID: 0}
+  canShoot: 1
+  timeBetweenShots: 0.5
+--- !u!114 &2198813354602963182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2337074158997199750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7682c825604db1d4ba9b7af544d77b72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fpsCamera: {fileID: 0}
+  fpsController: {fileID: 0}
+  zoomedOutFOV: 40
+  zoomedInFOV: 20
+  ZoomOutSensitivity: 1
+  ZoomInSensitivity: 0.5
 --- !u!1 &2337074158997199752
 GameObject:
   m_ObjectHideFlags: 0
