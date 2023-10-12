@@ -359,6 +359,7 @@ MonoBehaviour:
   muzzelflash: {fileID: 3857935786348656731}
   hitEffect: {fileID: 3360542172024696037, guid: 902c19503f8df8d4b923b01198f70905, type: 3}
   ammoSlot: {fileID: 0}
+  ammoType: 2
   canShoot: 1
   timeBetweenShots: 0.5
 --- !u!114 &2351026419614141456

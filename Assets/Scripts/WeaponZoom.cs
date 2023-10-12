@@ -20,23 +20,37 @@ public class WeaponZoom : MonoBehaviour
         fpsController = GetComponentInParent<FirstPersonController>();
     }
 
+    private void OnDisable()
+    {
+        ZoomOut();
+    }
+
     private void Update()
     {
         if(Input.GetMouseButtonDown(1))
         {
             if(zoomedInToggle == false)
             {
-                zoomedInToggle = true;
-                fpsCamera.m_Lens.FieldOfView = zoomedInFOV;
-                fpsController.RotationSpeed = ZoomInSensitivity; // If want to change x and y sensitivity individually, then go To FirstPersonController.cs and follow rotationSpeed Variable, you will get the way to change. 
+                ZoomIn();
             }
             else
             {
-                zoomedInToggle = false;
-                fpsCamera.m_Lens.FieldOfView = zoomedOutFOV;
-                fpsController.RotationSpeed = ZoomOutSensitivity; // If want to change x and y sensitivity individually, then go To FirstPersonController.cs and follow rotationSpeed Variable, you will get the way to change. 
+                ZoomOut();
             }
             Debug.Log("Scope");
         }
     }
+    private void ZoomIn()
+    {
+        zoomedInToggle = true;
+        fpsCamera.m_Lens.FieldOfView = zoomedInFOV;
+        fpsController.RotationSpeed = ZoomInSensitivity; // If want to change x and y sensitivity individually, then go To FirstPersonController.cs and follow rotationSpeed Variable, you will get the way to change. 
+    }
+    private void ZoomOut()
+    {
+        zoomedInToggle = false;
+        fpsCamera.m_Lens.FieldOfView = zoomedOutFOV;
+        fpsController.RotationSpeed = ZoomOutSensitivity; // If want to change x and y sensitivity individually, then go To FirstPersonController.cs and follow rotationSpeed Variable, you will get the way to change. 
+    }
+
 }
